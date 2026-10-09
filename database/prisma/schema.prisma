@@ -1,0 +1,494 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role { CUSTOMER ADMIN SELLER }
+enum PublishStatus { DRAFT PUBLISHED }
+enum OrderStatus { PENDING CONFIRMED PROCESSING SHIPPED DELIVERED CANCELLED }
+enum DeliveryStatus { NOT_SHIPPED IN_TRANSIT DELIVERED RETURNED }
+enum PaymentStatus { UNPAID PAID FAILED REFUNDED }
+enum PaymentMethod { COD ONLINE }
+enum BookingStatus { PENDING CONFIRMED CANCELLED COMPLETED }
+enum ReviewTarget { SPOT TOUR HOTEL EXPERIENCE PRODUCT SITE }
+enum ReviewStatus { PENDING APPROVED REJECTED }
+
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  phone         String?
+  name          String
+  passwordHash  String
+  role          Role     @default(CUSTOMER)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  seller        Seller?
+  addresses     Address[]
+  carts         Cart[]
+  orders        Order[]
+  bookings      TourBooking[]
+  reviews       Review[]
+  wishlists     Wishlist[]
+  notifications Notification[]
+  eventBookings EventBooking[]
+  certificates Certificate[]
+}
+
+model Division {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  nameEn    String
+  nameBn    String?
+  status    PublishStatus @default(PUBLISHED)
+  heroImage String?
+  districts District[]
+}
+
+model District {
+  id         String   @id @default(cuid())
+  slug       String   @unique
+  nameEn     String
+  nameBn     String?
+  divisionId String
+  division   Division @relation(fields: [divisionId], references: [id])
+  overview   String?
+  heroImage  String?
+  status     PublishStatus @default(PUBLISHED)
+  upazilas   Upazila[]
+  @@index([divisionId])
+}
+
+model Upazila {
+  id         String   @id @default(cuid())
+  slug       String   @unique
+  nameEn     String
+  nameBn     String?
+  districtId String
+  district   District @relation(fields: [districtId], references: [id])
+  status     PublishStatus @default(PUBLISHED)
+  spots      TourismSpot[]
+  hotels     Hotel[]
+  experiences Experience[]
+  origins    ProductOrigin[]
+  addresses  Address[]
+  events     Event[]
+  @@index([districtId])
+}
+
+model TourismSpot {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  nameEn      String
+  nameBn      String?
+  upazilaId   String
+  upazila     Upazila  @relation(fields: [upazilaId], references: [id])
+  description String?
+  latitude    Float?
+  longitude   Float?
+  bestTime    String?
+  entryFee    Int?
+  openingHours String?
+  howToReach  String?
+  travelTips  String?
+  safetyInfo  String?
+  status      PublishStatus @default(DRAFT)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  images      TourismSpotImage[]
+  tours       TourSpot[]
+  tags        TagOnSpot[]
+  @@index([upazilaId])
+  @@index([status])
+}
+
+model TourismSpotImage {
+  id     String @id @default(cuid())
+  spotId String
+  spot   TourismSpot @relation(fields: [spotId], references: [id], onDelete: Cascade)
+  url    String
+  alt    String?
+  sort   Int    @default(0)
+  @@index([spotId])
+}
+
+model Tour {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  category    String
+  summary     String?
+  durationDays Int
+  startingPrice Int
+  maxGroupSize Int?
+  included    String[]
+  notIncluded String[]
+  status      PublishStatus @default(DRAFT)
+  createdAt   DateTime @default(now())
+  itineraries TourItinerary[]
+  bookings    TourBooking[]
+  spots       TourSpot[]
+  @@index([status])
+}
+
+model TourSpot {
+  tourId String
+  spotId String
+  tour   Tour @relation(fields: [tourId], references: [id], onDelete: Cascade)
+  spot   TourismSpot @relation(fields: [spotId], references: [id], onDelete: Cascade)
+  @@id([tourId, spotId])
+}
+
+model TourItinerary {
+  id      String @id @default(cuid())
+  tourId  String
+  tour    Tour   @relation(fields: [tourId], references: [id], onDelete: Cascade)
+  day     Int
+  title   String
+  details String
+  @@index([tourId])
+}
+
+model TourBooking {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  tourId    String
+  tour      Tour     @relation(fields: [tourId], references: [id])
+  startDate DateTime
+  guests    Int
+  total     Int
+  status    BookingStatus @default(PENDING)
+  createdAt DateTime @default(now())
+  @@index([userId])
+  @@index([tourId])
+}
+
+model Experience {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  title     String
+  upazilaId String
+  upazila   Upazila  @relation(fields: [upazilaId], references: [id])
+  description String?
+  durationHours Int?
+  price     Int
+  status    PublishStatus @default(DRAFT)
+  @@index([upazilaId])
+}
+
+model Hotel {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  name      String
+  type      String
+  upazilaId String
+  upazila   Upazila  @relation(fields: [upazilaId], references: [id])
+  description String?
+  latitude  Float?
+  longitude Float?
+  facilities String[]
+  status    PublishStatus @default(DRAFT)
+  rooms     Room[]
+  @@index([upazilaId])
+}
+
+model Room {
+  id       String @id @default(cuid())
+  hotelId  String
+  hotel    Hotel  @relation(fields: [hotelId], references: [id], onDelete: Cascade)
+  name     String
+  pricePerNight Int
+  capacity Int
+  @@index([hotelId])
+}
+
+model Seller {
+  id        String   @id @default(cuid())
+  userId    String?  @unique
+  user      User?    @relation(fields: [userId], references: [id])
+  name      String
+  story     String?
+  isPlatform Boolean @default(false)
+  products  Product[]
+}
+
+model ProductCategory {
+  id       String @id @default(cuid())
+  slug     String @unique
+  name     String
+  parentId String?
+  parent   ProductCategory?  @relation("CatTree", fields: [parentId], references: [id])
+  children ProductCategory[] @relation("CatTree")
+  products Product[]
+}
+
+model Product {
+  id         String   @id @default(cuid())
+  slug       String   @unique
+  name       String
+  categoryId String
+  category   ProductCategory @relation(fields: [categoryId], references: [id])
+  sellerId   String
+  seller     Seller   @relation(fields: [sellerId], references: [id])
+  price      Int
+  weightGrams Int?
+  stock      Int      @default(0)
+  summary    String?
+  story      String?
+  productionMethod String?
+  status     PublishStatus @default(DRAFT)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  images     ProductImage[]
+  origin     ProductOrigin?
+  cartItems  CartItem[]
+  orderItems OrderItem[]
+  @@index([categoryId])
+  @@index([sellerId])
+  @@index([status])
+}
+
+model ProductImage {
+  id        String @id @default(cuid())
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  url       String
+  sort      Int    @default(0)
+  @@index([productId])
+}
+
+model ProductOrigin {
+  id        String  @id @default(cuid())
+  productId String  @unique
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  upazilaId String
+  upazila   Upazila @relation(fields: [upazilaId], references: [id])
+  @@index([upazilaId])
+}
+
+model Cart {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+  items  CartItem[]
+  updatedAt DateTime @updatedAt
+  @@index([userId])
+}
+
+model CartItem {
+  id        String @id @default(cuid())
+  cartId    String
+  cart      Cart   @relation(fields: [cartId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+  quantity  Int
+  @@unique([cartId, productId])
+}
+
+model Address {
+  id        String @id @default(cuid())
+  userId    String
+  user      User   @relation(fields: [userId], references: [id])
+  name      String
+  phone     String
+  upazilaId String
+  upazila   Upazila @relation(fields: [upazilaId], references: [id])
+  line      String
+  orders    Order[]
+  @@index([userId])
+}
+
+model Order {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id])
+  addressId  String
+  address    Address  @relation(fields: [addressId], references: [id])
+  subtotal   Int
+  deliveryFee Int
+  discount   Int      @default(0)
+  total      Int
+  couponCode String?
+  status     OrderStatus    @default(PENDING)
+  delivery   DeliveryStatus @default(NOT_SHIPPED)
+  note       String?
+  createdAt  DateTime @default(now())
+  items      OrderItem[]
+  payments   Payment[]
+  @@index([userId])
+  @@index([status])
+}
+
+model OrderItem {
+  id        String @id @default(cuid())
+  orderId   String
+  order     Order  @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+  quantity  Int
+  unitPrice Int
+}
+
+model Payment {
+  id        String @id @default(cuid())
+  orderId   String
+  order     Order  @relation(fields: [orderId], references: [id])
+  method    PaymentMethod
+  provider  String?
+  reference String?
+  amount    Int
+  status    PaymentStatus @default(UNPAID)
+  createdAt DateTime @default(now())
+  @@index([orderId])
+}
+
+model Review {
+  id         String @id @default(cuid())
+  userId     String
+  user       User   @relation(fields: [userId], references: [id])
+  targetType ReviewTarget
+  targetId   String
+  rating     Int
+  body       String?
+  photoUrl   String?
+  status     ReviewStatus @default(PENDING)
+  createdAt  DateTime @default(now())
+  @@index([targetType, targetId])
+}
+
+model Wishlist {
+  id         String @id @default(cuid())
+  userId     String
+  user       User   @relation(fields: [userId], references: [id])
+  targetType ReviewTarget
+  targetId   String
+  @@unique([userId, targetType, targetId])
+}
+
+model BlogPost {
+  id        String @id @default(cuid())
+  slug      String @unique
+  title     String
+  category  String
+  body      String
+  heroImage String?
+  status    PublishStatus @default(DRAFT)
+  publishedAt DateTime?
+}
+
+model Tag {
+  id    String @id @default(cuid())
+  slug  String @unique
+  name  String
+  spots TagOnSpot[]
+}
+
+model TagOnSpot {
+  spotId String
+  tagId  String
+  spot   TourismSpot @relation(fields: [spotId], references: [id], onDelete: Cascade)
+  tag    Tag @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  @@id([spotId, tagId])
+}
+
+model Notification {
+  id      String @id @default(cuid())
+  userId  String
+  user    User   @relation(fields: [userId], references: [id])
+  title   String
+  body    String?
+  readAt  DateTime?
+  createdAt DateTime @default(now())
+  @@index([userId])
+}
+
+// ---------- Events & certificates ----------
+model Event {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  upazilaId   String?
+  upazila     Upazila? @relation(fields: [upazilaId], references: [id])
+  description String?
+  startsAt    DateTime
+  endsAt      DateTime
+  price       Int      // paisa per person
+  seats       Int
+  status      PublishStatus @default(DRAFT)
+  bookings      EventBooking[]
+  certificates  Certificate[]
+  @@index([startsAt])
+  @@index([status])
+}
+
+enum EventBookingStatus { PENDING_PAYMENT PARTIALLY_PAID PAID CANCELLED }
+
+// Events are booked separately from the cart: at least 30% up front, the rest later.
+model EventBooking {
+  id       String  @id @default(cuid())
+  eventId  String
+  event    Event   @relation(fields: [eventId], references: [id])
+  userId   String
+  user     User    @relation(fields: [userId], references: [id])
+  guests   Int
+  total    Int     // paisa
+  paid     Int     @default(0)
+  status   EventBookingStatus @default(PENDING_PAYMENT)
+  attended Boolean @default(false)
+  createdAt DateTime @default(now())
+  payments EventPayment[]
+  @@unique([eventId, userId])
+}
+
+model EventPayment {
+  id        String @id @default(cuid())
+  bookingId String
+  booking   EventBooking @relation(fields: [bookingId], references: [id])
+  receiptNo String @unique
+  amount    Int
+  method    String
+  provider  String?
+  reference String?
+  status    PaymentStatus @default(UNPAID)
+  paidAt    DateTime?
+  createdAt DateTime @default(now())
+  @@index([bookingId])
+}
+
+model Certificate {
+  id         String   @id @default(cuid())
+  code       String   @unique
+  eventId    String
+  event      Event    @relation(fields: [eventId], references: [id])
+  userId     String
+  user       User     @relation(fields: [userId], references: [id])
+  holderName String
+  issuedAt   DateTime @default(now())
+  @@unique([eventId, userId])
+}
+
+// Site-wide switches managed from the admin panel: menu items, social links, etc.
+model SiteSetting {
+  key       String   @id   // "nav", "social"
+  value     Json
+  updatedAt DateTime @updatedAt
+}
+
+// Leads from the home search: where, how many people, when, and how to reach them.
+model TripInquiry {
+  id          String   @id @default(cuid())
+  destination String
+  people      Int
+  travelDate  DateTime?
+  dateFlexible Boolean @default(false)
+  name        String?
+  phone       String?
+  bestTime    String?
+  contacted   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  @@index([createdAt])
+}

@@ -1,0 +1,13 @@
+{
+  "name": "parbatya-travels-bd",
+  "private": true,
+  "workspaces": ["frontend", "backend", "shared"],
+  "scripts": {
+    "db:up": "docker compose up -d db",
+    "db:migrate": "prisma migrate dev --schema database/prisma/schema.prisma",
+    "db:seed": "ts-node database/prisma/seed.ts",
+    "backend:dev": "npm run start:dev -w backend"
+  },
+  "devDependencies": { "prisma": "^5.22.0", "ts-node": "^10.9.2", "typescript": "^5.5.0", "@types/node": "^20.0.0" },
+  "dependencies": { "@prisma/client": "^5.22.0" }
+}

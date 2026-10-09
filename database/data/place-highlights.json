@@ -1,0 +1,1399 @@
+{
+ "note": "Prototype content from general knowledge. Verify before publishing.",
+ "districts": {
+  "Barguna": [
+   [
+    "Tengragiri Wildlife Sanctuary"
+   ],
+   [
+    "Coastal river and mangrove landscape"
+   ],
+   [
+    "Hilsa",
+    "Dried fish"
+   ]
+  ],
+  "Barishal": [
+   [
+    "Durga Sagar (Babuganj)",
+    "Guthia Mosque (Bakerganj)",
+    "Kirtankhola river"
+   ],
+   [
+    "River and canal landscape"
+   ],
+   [
+    "Guava",
+    "Hilsa"
+   ]
+  ],
+  "Bhola": [
+   [
+    "Char Kukri-Mukri",
+    "Manpura Island"
+   ],
+   [
+    "River islands",
+    "Hilsa"
+   ],
+   [
+    "Hilsa",
+    "Buffalo-milk curd"
+   ]
+  ],
+  "Jhalokathi": [
+   [
+    "Bhimruli floating guava market"
+   ],
+   [
+    "Floating guava market"
+   ],
+   [
+    "Guava"
+   ]
+  ],
+  "Patuakhali": [
+   [
+    "Kuakata Sea Beach",
+    "Rakhine villages near Kuakata"
+   ],
+   [
+    "Sunrise and sunset from the same beach",
+    "Rakhine culture"
+   ],
+   [
+    "Dried fish",
+    "Rakhine handloom"
+   ]
+  ],
+  "Pirojpur": [
+   [
+    "Swarupkathi floating guava market"
+   ],
+   [
+    "Floating guava market"
+   ],
+   [
+    "Guava"
+   ]
+  ],
+  "Bandarban": [
+   [
+    "Nilgiri",
+    "Boga Lake",
+    "Nafakhum waterfall",
+    "Buddha Dhatu Jadi (Golden Temple)",
+    "Shoilo Propat waterfall"
+   ],
+   [
+    "Highest hills and trekking",
+    "Marma, Bawm and other hill communities"
+   ],
+   [
+    "Handwoven textiles",
+    "Hill ginger and turmeric",
+    "Bamboo crafts"
+   ]
+  ],
+  "Brahmanbaria": [
+   [
+    "Titas river banks",
+    "Akhaura"
+   ],
+   [
+    "Classical music legacy of Ustad Alauddin Khan"
+   ],
+   []
+  ],
+  "Chandpur": [
+   [
+    "Meghna–Padma confluence",
+    "Riverfront launches"
+   ],
+   [
+    "Hilsa"
+   ],
+   [
+    "Hilsa"
+   ]
+  ],
+  "Chattogram": [
+   [
+    "Patenga Beach",
+    "Foy's Lake",
+    "Ethnological Museum",
+    "War Cemetery",
+    "Sitakunda Eco Park"
+   ],
+   [
+    "Port city where hills meet the sea",
+    "Mezban beef"
+   ],
+   [
+    "Mezban beef curry",
+    "Dried fish"
+   ]
+  ],
+  "Cumilla": [
+   [
+    "Mainamati Shalban Vihara",
+    "Moynamati War Cemetery",
+    "Kotbari"
+   ],
+   [
+    "Buddhist ruins",
+    "Rasmalai"
+   ],
+   [
+    "Rasmalai",
+    "Khadi cloth"
+   ]
+  ],
+  "Cox's Bazar": [
+   [
+    "Cox's Bazar Beach",
+    "Inani Beach",
+    "Himchari",
+    "Saint Martin's Island",
+    "Adinath Temple (Maheshkhali)",
+    "Ramu Buddhist temples"
+   ],
+   [
+    "World's longest natural sea beach"
+   ],
+   [
+    "Dried fish (shutki)",
+    "Sea salt",
+    "Rakhine textiles"
+   ]
+  ],
+  "Feni": [
+   [
+    "Muhuri Project (Parshuram)"
+   ],
+   [],
+   []
+  ],
+  "Khagrachari": [
+   [
+    "Alutila Cave",
+    "Richhang Waterfall",
+    "Chengi river"
+   ],
+   [
+    "Hill communities (Chakma, Marma, Tripura)",
+    "Jhum cultivation"
+   ],
+   [
+    "Jhum chili",
+    "Hill turmeric",
+    "Binni rice",
+    "Hill honey",
+    "Bamboo and cane crafts",
+    "Handwoven textiles"
+   ]
+  ],
+  "Noakhali": [
+   [
+    "Nijhum Dwip",
+    "Hatiya Island"
+   ],
+   [
+    "Nijhum Dwip's deer and mangroves"
+   ],
+   [
+    "Hilsa"
+   ]
+  ],
+  "Rangamati": [
+   [
+    "Kaptai Lake",
+    "Hanging Bridge",
+    "Shuvolong waterfall",
+    "Sajek Valley",
+    "Rajban Vihara",
+    "Tribal Cultural Museum"
+   ],
+   [
+    "Lake district with hill-community culture"
+   ],
+   [
+    "Handwoven textiles (Pinon)",
+    "Bamboo crafts"
+   ]
+  ],
+  "Dhaka": [
+   [
+    "Lalbagh Fort",
+    "Ahsan Manzil",
+    "Armenian Church",
+    "National Parliament House",
+    "Dhakeshwari Temple",
+    "Star Mosque",
+    "Sadarghat"
+   ],
+   [
+    "Old Dhaka food and rickshaw art"
+   ],
+   [
+    "Bakarkhani",
+    "Jamdani saree"
+   ]
+  ],
+  "Faridpur": [
+   [],
+   [
+    "Date-palm jaggery (khejur gur)"
+   ],
+   [
+    "Date-palm jaggery"
+   ]
+  ],
+  "Gazipur": [
+   [
+    "Bhawal National Park",
+    "Bangabandhu Safari Park (Kaliakair)"
+   ],
+   [
+    "Sal forest"
+   ],
+   []
+  ],
+  "Gopalganj": [
+   [
+    "Bangabandhu Mausoleum (Tungipara)"
+   ],
+   [
+    "Tungipara village"
+   ],
+   []
+  ],
+  "Kishoreganj": [
+   [
+    "Bhairab Railway Bridge",
+    "Haor wetlands"
+   ],
+   [
+    "Haor wetlands and migratory birds"
+   ],
+   []
+  ],
+  "Munshiganj": [
+   [
+    "Bajrayogini (Atish Dipankar's birthplace)",
+    "Idrakpur Fort"
+   ],
+   [
+    "Ancient Bikrampur heritage"
+   ],
+   [
+    "Potato"
+   ]
+  ],
+  "Narayanganj": [
+   [
+    "Panam Nagar (Sonargaon)",
+    "Folk Art and Crafts Museum",
+    "Goaldi Mosque"
+   ],
+   [
+    "Old capital Sonargaon",
+    "Jamdani weaving"
+   ],
+   [
+    "Jamdani saree"
+   ]
+  ],
+  "Narsingdi": [
+   [],
+   [
+    "Handloom textiles"
+   ],
+   [
+    "Handloom fabrics"
+   ]
+  ],
+  "Tangail": [
+   [
+    "Atia Mosque (Delduar)",
+    "Madhupur National Park",
+    "Dhanbari Nawab Palace"
+   ],
+   [
+    "Tangail saree",
+    "Madhupur sal forest"
+   ],
+   [
+    "Tangail saree",
+    "Porabari chomchom",
+    "Madhupur pineapple"
+   ]
+  ],
+  "Bagerhat": [
+   [
+    "Sixty Dome Mosque",
+    "Khan Jahan Ali's Tomb",
+    "Sundarbans (Mongla and Sarankhola)",
+    "Karamjal"
+   ],
+   [
+    "UNESCO mosque city and the Sundarbans"
+   ],
+   [
+    "Sundarbans honey",
+    "Shrimp"
+   ]
+  ],
+  "Jashore": [
+   [
+    "Sagardari (Michael Madhusudan Dutt's home, Keshabpur)",
+    "Benapole land port"
+   ],
+   [
+    "Date-palm jaggery and date juice"
+   ],
+   [
+    "Date-palm jaggery"
+   ]
+  ],
+  "Khulna": [
+   [
+    "Sundarbans (Koyra and Dacope)",
+    "Rupsha river"
+   ],
+   [
+    "Gateway to the Sundarbans"
+   ],
+   [
+    "Shrimp",
+    "Sundarbans honey"
+   ]
+  ],
+  "Kushtia": [
+   [
+    "Lalon Shah's Akhra (Cheuria)",
+    "Tagore Kuthibari (Shilaidaha)"
+   ],
+   [
+    "Baul tradition and Rabindranath Tagore's river years"
+   ],
+   []
+  ],
+  "Meherpur": [
+   [
+    "Mujibnagar Memorial Complex"
+   ],
+   [
+    "Site of the 1971 first government oath"
+   ],
+   []
+  ],
+  "Satkhira": [
+   [
+    "Sundarbans (Shyamnagar)"
+   ],
+   [
+    "Sundarbans edge",
+    "Shrimp farming"
+   ],
+   [
+    "Shrimp",
+    "Sundarbans honey"
+   ]
+  ],
+  "Jamalpur": [
+   [],
+   [
+    "Nakshi kantha embroidery"
+   ],
+   [
+    "Nakshi kantha"
+   ]
+  ],
+  "Mymensingh": [
+   [
+    "Shashi Lodge",
+    "Alexander Castle",
+    "Brahmaputra riverfront"
+   ],
+   [
+    "Muktagachha monda sweet",
+    "Mymensingh Gitika ballads"
+   ],
+   [
+    "Muktagachha monda"
+   ]
+  ],
+  "Netrokona": [
+   [
+    "Bijoypur white clay hills (Durgapur)"
+   ],
+   [
+    "Haor wetlands",
+    "Garo culture"
+   ],
+   []
+  ],
+  "Sherpur": [
+   [
+    "Gajni Eco Park (Jhenaigati)"
+   ],
+   [
+    "Garo Hills foothills"
+   ],
+   []
+  ],
+  "Bogura": [
+   [
+    "Mahasthangarh",
+    "Vasu Vihara"
+   ],
+   [
+    "Ancient Pundranagar",
+    "Bogura doi (curd)"
+   ],
+   [
+    "Bogura doi"
+   ]
+  ],
+  "Chapainawabganj": [
+   [
+    "Chhota Sona Mosque"
+   ],
+   [
+    "Mango",
+    "Silk"
+   ],
+   [
+    "Mango",
+    "Silk"
+   ]
+  ],
+  "Naogaon": [
+   [
+    "Paharpur Buddhist Vihara (UNESCO)",
+    "Kusumba Mosque"
+   ],
+   [
+    "UNESCO Buddhist monastery"
+   ],
+   [
+    "Mango"
+   ]
+  ],
+  "Natore": [
+   [
+    "Natore Rajbari",
+    "Dighapatia Palace",
+    "Chalan Beel"
+   ],
+   [
+    "Kachagolla sweet"
+   ],
+   [
+    "Kachagolla"
+   ]
+  ],
+  "Pabna": [
+   [
+    "Hardinge Bridge (Ishwardi)"
+   ],
+   [
+    "Rail-bridge heritage"
+   ],
+   []
+  ],
+  "Rajshahi": [
+   [
+    "Puthia Temple Complex",
+    "Varendra Research Museum",
+    "Padma riverfront",
+    "Bagha Mosque"
+   ],
+   [
+    "Silk and mango"
+   ],
+   [
+    "Silk",
+    "Mango"
+   ]
+  ],
+  "Sirajganj": [
+   [
+    "Rabindra Kachari Bari (Shahjadpur)",
+    "Bangabandhu Jamuna Bridge"
+   ],
+   [
+    "Jamuna river"
+   ],
+   [
+    "Handloom cloth"
+   ]
+  ],
+  "Dinajpur": [
+   [
+    "Kantajew Temple",
+    "Ramsagar",
+    "Dinajpur Rajbari"
+   ],
+   [
+    "Kataribhog rice",
+    "Lychee"
+   ],
+   [
+    "Kataribhog rice",
+    "Lychee"
+   ]
+  ],
+  "Lalmonirhat": [
+   [
+    "Tinbigha Corridor (Patgram)",
+    "Teesta Barrage"
+   ],
+   [
+    "Teesta river"
+   ],
+   []
+  ],
+  "Nilphamari": [
+   [
+    "Saidpur Railway Workshop"
+   ],
+   [
+    "Railway heritage"
+   ],
+   []
+  ],
+  "Panchagarh": [
+   [
+    "Banglabandha Zero Point (Tetulia)",
+    "Tetulia tea gardens"
+   ],
+   [
+    "Northernmost district",
+    "Tea"
+   ],
+   [
+    "Tea"
+   ]
+  ],
+  "Rangpur": [
+   [
+    "Tajhat Palace"
+   ],
+   [
+    "Shataranji handwoven mats"
+   ],
+   [
+    "Shataranji mats"
+   ]
+  ],
+  "Habiganj": [
+   [
+    "Satchari National Park",
+    "Baniyachong"
+   ],
+   [
+    "Tea gardens",
+    "Baniyachong, often called the world's largest village"
+   ],
+   [
+    "Tea"
+   ]
+  ],
+  "Moulvibazar": [
+   [
+    "Lawachara National Park",
+    "Madhabkunda Waterfall",
+    "Sreemangal tea estates",
+    "Nilkantha Tea Cabin",
+    "Hamham Falls"
+   ],
+   [
+    "Tea capital",
+    "Seven-layer tea"
+   ],
+   [
+    "Tea",
+    "Pineapple",
+    "Lemon",
+    "Honey"
+   ]
+  ],
+  "Sunamganj": [
+   [
+    "Tanguar Haor",
+    "Niladri Lake",
+    "Jadukata river"
+   ],
+   [
+    "Haor wetlands and migratory birds"
+   ],
+   []
+  ],
+  "Sylhet": [
+   [
+    "Jaflong",
+    "Ratargul Swamp Forest",
+    "Bichnakandi",
+    "Lalakhal",
+    "Shah Jalal Dargah",
+    "Keane Bridge"
+   ],
+   [
+    "Tea",
+    "Shatkora citrus",
+    "Khasi culture"
+   ],
+   [
+    "Shatkora",
+    "Tea",
+    "Agarwood",
+    "Khasi betel leaf"
+   ]
+  ]
+ },
+ "upazilas": {
+  "Chattogram|Sitakunda": [
+   [
+    "Chandranath Temple",
+    "Sitakunda Eco Park",
+    "Guliakhali Beach"
+   ],
+   [
+    "Hill forest and ship-breaking yards"
+   ],
+   []
+  ],
+  "Chattogram|Anwara": [
+   [
+    "Parki Beach"
+   ],
+   [
+    "Coastal strip"
+   ],
+   []
+  ],
+  "Chattogram|Sandwip": [
+   [
+    "Sandwip Island beaches"
+   ],
+   [
+    "Island life"
+   ],
+   []
+  ],
+  "Cox's Bazar|Cox's Bazar Sadar": [
+   [
+    "Cox's Bazar Beach",
+    "Himchari",
+    "Laboni Beach",
+    "Marine Drive"
+   ],
+   [
+    "World's longest natural sea beach"
+   ],
+   [
+    "Dried fish"
+   ]
+  ],
+  "Cox's Bazar|Ukhia": [
+   [
+    "Inani Beach"
+   ],
+   [
+    "Coral-stone shoreline"
+   ],
+   []
+  ],
+  "Cox's Bazar|Maheshkhali": [
+   [
+    "Adinath Temple",
+    "Matarbari"
+   ],
+   [
+    "Island of hills and betel gardens"
+   ],
+   [
+    "Betel leaf",
+    "Dried fish"
+   ]
+  ],
+  "Cox's Bazar|Teknaf": [
+   [
+    "Saint Martin's Island",
+    "Teknaf Wildlife Sanctuary"
+   ],
+   [
+    "Southern tip of the mainland"
+   ],
+   [
+    "Dried fish"
+   ]
+  ],
+  "Cox's Bazar|Ramu": [
+   [
+    "Ramu Buddhist temples"
+   ],
+   [
+    "Buddhist heritage"
+   ],
+   []
+  ],
+  "Cox's Bazar|Kutubdia": [
+   [
+    "Kutubdia lighthouse"
+   ],
+   [
+    "Island with salt farming"
+   ],
+   [
+    "Sea salt"
+   ]
+  ],
+  "Bandarban|Bandarban Sadar": [
+   [
+    "Buddha Dhatu Jadi",
+    "Shoilo Propat waterfall",
+    "Meghla"
+   ],
+   [
+    "Hill town with Marma culture"
+   ],
+   [
+    "Handwoven textiles"
+   ]
+  ],
+  "Bandarban|Ruma": [
+   [
+    "Boga Lake",
+    "Keokradong"
+   ],
+   [
+    "Hill trekking"
+   ],
+   []
+  ],
+  "Bandarban|Thanchi": [
+   [
+    "Nafakhum waterfall",
+    "Remakri",
+    "Nilgiri"
+   ],
+   [
+    "Remote hill trails"
+   ],
+   []
+  ],
+  "Bandarban|Naikhongchhari": [
+   [
+    "Amiakhum waterfall"
+   ],
+   [
+    "Border river valleys"
+   ],
+   []
+  ],
+  "Rangamati|Baghaichhari": [
+   [
+    "Sajek Valley"
+   ],
+   [
+    "Cloud-level ridge"
+   ],
+   []
+  ],
+  "Rangamati|Kaptai": [
+   [
+    "Kaptai Lake",
+    "Kaptai National Park"
+   ],
+   [
+    "Man-made lake"
+   ],
+   []
+  ],
+  "Rangamati|Barkal": [
+   [
+    "Shuvolong waterfall"
+   ],
+   [
+    "Lake and hills"
+   ],
+   []
+  ],
+  "Rangamati|Rangamati Sadar": [
+   [
+    "Hanging Bridge",
+    "Rajban Vihara",
+    "Tribal Cultural Museum"
+   ],
+   [
+    "Lake town"
+   ],
+   [
+    "Handwoven textiles"
+   ]
+  ],
+  "Khagrachari|Khagrachari Sadar": [
+   [
+    "Alutila Cave",
+    "Richhang Waterfall"
+   ],
+   [
+    "Hill-community culture and Jhum farming"
+   ],
+   [
+    "Hill turmeric",
+    "Handwoven textiles"
+   ]
+  ],
+  "Khagrachari|Dighinala": [
+   [
+    "Chengi river"
+   ],
+   [
+    "Jhum farming"
+   ],
+   [
+    "Jhum chili",
+    "Hill turmeric",
+    "Binni rice",
+    "Hill honey"
+   ]
+  ],
+  "Dhaka|Dhaka City": [
+   [
+    "Lalbagh Fort",
+    "Ahsan Manzil",
+    "Armenian Church",
+    "Dhakeshwari Temple",
+    "Star Mosque",
+    "Sadarghat"
+   ],
+   [
+    "Old Dhaka food"
+   ],
+   [
+    "Bakarkhani",
+    "Jamdani saree"
+   ]
+  ],
+  "Dhaka|Savar": [
+   [
+    "National Martyrs' Memorial"
+   ],
+   [
+    "Memorial landmark"
+   ],
+   []
+  ],
+  "Dhaka|Dhamrai": [
+   [
+    "Dhamrai Rath festival"
+   ],
+   [
+    "Brassware"
+   ],
+   [
+    "Brassware"
+   ]
+  ],
+  "Narayanganj|Sonargaon": [
+   [
+    "Panam Nagar",
+    "Folk Art and Crafts Museum",
+    "Goaldi Mosque"
+   ],
+   [
+    "Medieval capital"
+   ],
+   []
+  ],
+  "Narayanganj|Rupganj": [
+   [],
+   [
+    "Jamdani weaving villages"
+   ],
+   [
+    "Jamdani saree"
+   ]
+  ],
+  "Gazipur|Kaliakair": [
+   [
+    "Bangabandhu Safari Park"
+   ],
+   [
+    "Safari park"
+   ],
+   []
+  ],
+  "Gazipur|Gazipur Sadar": [
+   [
+    "Bhawal National Park"
+   ],
+   [
+    "Sal forest"
+   ],
+   []
+  ],
+  "Munshiganj|Munshiganj Sadar": [
+   [
+    "Bajrayogini (Atish Dipankar's birthplace)"
+   ],
+   [
+    "Bikrampur heritage"
+   ],
+   [
+    "Potato"
+   ]
+  ],
+  "Tangail|Madhupur": [
+   [
+    "Madhupur National Park"
+   ],
+   [
+    "Sal forest"
+   ],
+   [
+    "Pineapple"
+   ]
+  ],
+  "Tangail|Delduar": [
+   [
+    "Atia Mosque"
+   ],
+   [
+    "Mughal-era mosque"
+   ],
+   []
+  ],
+  "Tangail|Tangail Sadar": [
+   [],
+   [
+    "Tangail saree weaving"
+   ],
+   [
+    "Tangail saree",
+    "Porabari chomchom"
+   ]
+  ],
+  "Kishoreganj|Bhairab": [
+   [
+    "Bhairab Railway Bridge"
+   ],
+   [
+    "River port town"
+   ],
+   []
+  ],
+  "Gopalganj|Tungipara": [
+   [
+    "Bangabandhu Mausoleum"
+   ],
+   [
+    "Tungipara village"
+   ],
+   []
+  ],
+  "Bagerhat|Bagerhat Sadar": [
+   [
+    "Sixty Dome Mosque",
+    "Khan Jahan Ali's Tomb"
+   ],
+   [
+    "UNESCO mosque city"
+   ],
+   []
+  ],
+  "Bagerhat|Mongla": [
+   [
+    "Karamjal",
+    "Sundarbans entry points"
+   ],
+   [
+    "Port and Sundarbans gateway"
+   ],
+   [
+    "Sundarbans honey",
+    "Shrimp"
+   ]
+  ],
+  "Jashore|Keshabpur": [
+   [
+    "Sagardari (Michael Madhusudan Dutt's home)"
+   ],
+   [
+    "Literary heritage"
+   ],
+   []
+  ],
+  "Kushtia|Kumarkhali": [
+   [
+    "Tagore Kuthibari (Shilaidaha)"
+   ],
+   [
+    "Rabindranath Tagore's river residence"
+   ],
+   []
+  ],
+  "Kushtia|Kushtia Sadar": [
+   [
+    "Lalon Shah's Akhra (Cheuria)"
+   ],
+   [
+    "Baul tradition"
+   ],
+   []
+  ],
+  "Meherpur|Mujibnagar": [
+   [
+    "Mujibnagar Memorial Complex"
+   ],
+   [
+    "1971 first government oath"
+   ],
+   []
+  ],
+  "Satkhira|Shyamnagar": [
+   [
+    "Sundarbans (Kaikhali)"
+   ],
+   [
+    "Sundarbans edge"
+   ],
+   [
+    "Sundarbans honey",
+    "Shrimp"
+   ]
+  ],
+  "Mymensingh|Muktagachha": [
+   [
+    "Muktagachha Rajbari"
+   ],
+   [
+    "Monda sweet"
+   ],
+   [
+    "Muktagachha monda"
+   ]
+  ],
+  "Mymensingh|Mymensingh Sadar": [
+   [
+    "Shashi Lodge",
+    "Alexander Castle",
+    "Brahmaputra riverfront"
+   ],
+   [
+    "Gitika ballads"
+   ],
+   []
+  ],
+  "Netrokona|Durgapur": [
+   [
+    "Bijoypur white clay hills"
+   ],
+   [
+    "Garo culture"
+   ],
+   []
+  ],
+  "Sherpur|Jhenaigati": [
+   [
+    "Gajni Eco Park"
+   ],
+   [
+    "Garo Hills foothills"
+   ],
+   []
+  ],
+  "Bogura|Shibganj": [
+   [
+    "Mahasthangarh"
+   ],
+   [
+    "Pundranagar ruins"
+   ],
+   []
+  ],
+  "Bogura|Bogura Sadar": [
+   [
+    "Vasu Vihara"
+   ],
+   [
+    "Doi (curd)"
+   ],
+   [
+    "Bogura doi"
+   ]
+  ],
+  "Chapainawabganj|Shibganj": [
+   [
+    "Chhota Sona Mosque"
+   ],
+   [
+    "Mango",
+    "Silk"
+   ],
+   [
+    "Mango",
+    "Silk"
+   ]
+  ],
+  "Naogaon|Badalgachhi": [
+   [
+    "Paharpur Buddhist Vihara"
+   ],
+   [
+    "UNESCO site"
+   ],
+   []
+  ],
+  "Naogaon|Manda": [
+   [
+    "Kusumba Mosque"
+   ],
+   [
+    "Mosque heritage"
+   ],
+   []
+  ],
+  "Natore|Natore Sadar": [
+   [
+    "Natore Rajbari",
+    "Dighapatia Palace"
+   ],
+   [
+    "Kachagolla sweet"
+   ],
+   [
+    "Kachagolla"
+   ]
+  ],
+  "Natore|Singra": [
+   [
+    "Chalan Beel"
+   ],
+   [
+    "Wetland"
+   ],
+   []
+  ],
+  "Rajshahi|Puthia": [
+   [
+    "Puthia Temple Complex"
+   ],
+   [
+    "Terracotta temples"
+   ],
+   []
+  ],
+  "Rajshahi|Bagha": [
+   [
+    "Bagha Mosque"
+   ],
+   [
+    "Sultanate-era mosque"
+   ],
+   []
+  ],
+  "Sirajganj|Shahjadpur": [
+   [
+    "Rabindra Kachari Bari"
+   ],
+   [
+    "Tagore's estate"
+   ],
+   []
+  ],
+  "Pabna|Ishwardi": [
+   [
+    "Hardinge Bridge"
+   ],
+   [
+    "Rail bridge"
+   ],
+   []
+  ],
+  "Dinajpur|Kaharole": [
+   [
+    "Kantajew Temple"
+   ],
+   [
+    "Terracotta temple"
+   ],
+   []
+  ],
+  "Dinajpur|Dinajpur Sadar": [
+   [
+    "Ramsagar",
+    "Dinajpur Rajbari"
+   ],
+   [
+    "Kataribhog rice"
+   ],
+   [
+    "Kataribhog rice",
+    "Lychee"
+   ]
+  ],
+  "Rangpur|Rangpur Sadar": [
+   [
+    "Tajhat Palace"
+   ],
+   [
+    "Shataranji mats"
+   ],
+   [
+    "Shataranji mats"
+   ]
+  ],
+  "Lalmonirhat|Patgram": [
+   [
+    "Tinbigha Corridor"
+   ],
+   [
+    "Border enclaves"
+   ],
+   []
+  ],
+  "Panchagarh|Tetulia": [
+   [
+    "Banglabandha Zero Point",
+    "Tea gardens"
+   ],
+   [
+    "Northernmost point"
+   ],
+   [
+    "Tea"
+   ]
+  ],
+  "Nilphamari|Saidpur": [
+   [
+    "Saidpur Railway Workshop"
+   ],
+   [
+    "Railway town"
+   ],
+   []
+  ],
+  "Sylhet|Gowainghat": [
+   [
+    "Jaflong",
+    "Ratargul Swamp Forest",
+    "Bichnakandi",
+    "Tamabil"
+   ],
+   [
+    "Stone-bed rivers and swamp forest"
+   ],
+   []
+  ],
+  "Sylhet|Companiganj": [
+   [
+    "Bholaganj Shada Pathor"
+   ],
+   [
+    "White-stone river"
+   ],
+   []
+  ],
+  "Sylhet|Jaintiapur": [
+   [
+    "Lalakhal",
+    "Jaintia Rajbari"
+   ],
+   [
+    "Blue-water river"
+   ],
+   []
+  ],
+  "Sylhet|Sylhet Sadar": [
+   [
+    "Shah Jalal Dargah",
+    "Keane Bridge",
+    "Ali Amjad's Clock"
+   ],
+   [
+    "Spiritual and tea city"
+   ],
+   [
+    "Shatkora",
+    "Tea"
+   ]
+  ],
+  "Moulvibazar|Sreemangal": [
+   [
+    "Nilkantha Tea Cabin",
+    "Tea estates"
+   ],
+   [
+    "Tea capital"
+   ],
+   [
+    "Tea",
+    "Pineapple",
+    "Lemon"
+   ]
+  ],
+  "Moulvibazar|Kamalganj": [
+   [
+    "Lawachara National Park"
+   ],
+   [
+    "Rainforest"
+   ],
+   []
+  ],
+  "Moulvibazar|Barlekha": [
+   [
+    "Madhabkunda Waterfall"
+   ],
+   [
+    "Waterfall"
+   ],
+   []
+  ],
+  "Moulvibazar|Kulaura": [
+   [
+    "Hamham Falls"
+   ],
+   [
+    "Forest falls"
+   ],
+   []
+  ],
+  "Habiganj|Chunarughat": [
+   [
+    "Satchari National Park"
+   ],
+   [
+    "Rainforest"
+   ],
+   [
+    "Tea"
+   ]
+  ],
+  "Habiganj|Baniyachong": [
+   [
+    "Baniyachong village"
+   ],
+   [
+    "Very large village"
+   ],
+   []
+  ],
+  "Sunamganj|Tahirpur": [
+   [
+    "Tanguar Haor",
+    "Niladri Lake",
+    "Jadukata river"
+   ],
+   [
+    "Ramsar wetland"
+   ],
+   []
+  ]
+ }
+}
